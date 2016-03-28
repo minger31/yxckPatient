@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_menu_pick_photo_height"
+        android:background="#d7d7d7"
+        android:duplicateParentState="false"
+        android:padding="@dimen/line_width1" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="上传照片"
+            android:textColor="#565656"
+            android:textSize="@dimen/word_size_18sp" />
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/select_cancle"
+            android:padding="3dp"
+            android:tag="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_size_14sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="@color/white"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/line_width1" >
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:drawableLeft="@drawable/ic_fy"
+            android:drawablePadding="5dp"
+            android:tag="2"
+            android:textColor="#979797"
+            android:textSize="@dimen/word_size_12sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shape1"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/line_width1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_camera"
+            android:drawablePadding="5dp"
+            android:tag="2"
+            android:text="拍照"
+            android:textColor="#979797"
+            android:textSize="@dimen/word_size_14sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_imagelib"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_shape1"
+        android:duplicateParentState="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/line_width1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_imagelib"
+            android:drawablePadding="5dp"
+            android:tag="2"
+            android:text="从相册中选择"
+            android:textColor="#979797"
+            android:textSize="@dimen/word_size_14sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

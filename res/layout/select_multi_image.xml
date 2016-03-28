@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/preview_pic_bg"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/title_line" />
+
+    <RelativeLayout 
+        android:id="@+id/bnt_share_photos_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="@dimen/preview_bottom_layout_height"
+        android:layout_width="fill_parent"
+        android:background="@color/preview_pic_btn_bg" >
+       <Button
+            android:id="@+id/bnt_share_photos"
+            android:layout_height="@dimen/preview_bottom_button_height"
+            android:layout_width="@dimen/preview_bottom_button_width"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/preview_finish_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="完成" /> 
+       <Button
+            android:id="@+id/bnt_preview_photos"
+            android:layout_height="@dimen/preview_bottom_button_height"
+            android:layout_width="@dimen/preview_bottom_button_width"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/preview_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="预览" /> 
+        <TextView
+            android:id="@+id/share_account"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:textSize="@dimen/word_size_12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/count_circle_bg"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="3dip" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_above="@+id/bnt_share_photos_layout"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="@dimen/multi_image_chooser_padding"
+        android:paddingRight="@dimen/multi_image_chooser_padding"
+        android:paddingTop="10dip" >
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:columnWidth="0dip"
+            android:fastScrollEnabled="true"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/multi_image_chooser_spacing"
+            android:listSelector="#00000000"
+            android:numColumns="auto_fit"
+            android:requiresFadingEdge="none"
+            android:scrollbars="none"
+            android:scrollingCache="true"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="@dimen/multi_image_chooser_spacing" />
+    </LinearLayout>
+
+</RelativeLayout>

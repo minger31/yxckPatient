@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_out_shape"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/patientLt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_bg"
+        android:duplicateParentState="true"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="系统拍照"
+            android:textColor="@color/color_22292c"
+            android:textSize="@dimen/word_size_15sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_line" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:id="@+id/topicLt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_bg" >
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="选择系统相册"
+            android:textColor="@color/color_22292c"
+            android:textSize="@dimen/word_size_15sp" />
+    </LinearLayout>
+
+</LinearLayout>

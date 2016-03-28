@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_20"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/width_line1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_change_password"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="@string/change_password" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_opinions_suggestions"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="@string/opinions_suggestions" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_product_presentation"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="@string/product_presentation" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_software_update"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left"
+            android:text="@string/software_update" />
+    </LinearLayout>
+
+    <include layout="@layout/width_line1" />
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <ImageView
+                    android:id="@+id/partyheadUrl"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_heads_doc"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_party_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignTop="@+id/partyheadUrl"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/partyheadUrl"
+                    android:text="诸葛亮"
+                    android:textColor="@color/color_22292c" />
+
+                <TextView
+                    android:id="@+id/tv_duty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_party_name"
+                    android:text="主治医师"
+                    android:textColor="#acacac" />
+
+                <TextView
+                    android:id="@+id/tv_hospital_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_duty"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/tv_worker_unit"
+                    android:text="院士"
+                    android:textColor="#acacac" />
+
+                <LinearLayout
+                    android:id="@+id/ltMore"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_worker_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tv_hospital_title"
+                    android:layout_alignBottom="@+id/tv_hospital_title"
+                    android:layout_alignLeft="@+id/tv_party_name"
+                    android:text="北京协和医院"
+                    android:textColor="#acacac" />
+
+                <TextView
+                    android:id="@+id/tv_department"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_worker_unit"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/partyheadUrl"
+                    android:text="脑外科"
+                    android:textColor="#acacac" />
+
+                <TextView
+                    android:id="@+id/tv_depart_position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_worker_unit"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_department"
+                    android:text="副主任"
+                    android:textColor="#acacac" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <include layout="@layout/width_line1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_flower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_send_flowers_false"
+                    android:drawablePadding="5dp"
+                    android:text="(0)束"
+                    android:textColor="@color/color_979797" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/color_dddddd" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_banner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_banner"
+                    android:drawablePadding="5dp"
+                    android:text="(0)面"
+                    android:textColor="@color/color_979797" />
+            </LinearLayout>
+ 
+        </LinearLayout>
+
+        <include layout="@layout/width_line1" />
+        <!-- 头部              ================================================================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" >
+
+            <TextView
+                android:id="@+id/patientCount"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:text="患者100"
+                android:textColor="#22292c" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_main_page"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/visitorCount"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="随访100"
+                    android:textColor="@color/color_979797"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/patientEducation"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="患教100"
+                    android:textColor="@color/color_979797"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

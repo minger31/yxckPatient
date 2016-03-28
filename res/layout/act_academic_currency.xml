@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/distance_10" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#5ba0ff"
+            android:text="@string/residue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/word_size_16sp" />
+
+        <TextView
+            android:id="@+id/coins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_5"
+            android:textColor="#fc6c09"
+            android:text="1"
+            android:textSize="@dimen/word_size_16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/sub_main_text_item_black16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yuan" />
+    </LinearLayout>
+
+    <com.patient.commonent.PullToRefreshListView
+        android:id="@+id/salesList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/distance_20"
+        android:background="@color/white"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="@dimen/distance_10"
+        android:paddingRight="@dimen/distance_10"
+        android:scrollbars="none" />
+
+</LinearLayout>

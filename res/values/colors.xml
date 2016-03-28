@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="share_txt_color">#B4B5B5 </color>
+    <color name="share_pic_bg">#EBEBEB</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="preview_pic_btn_bg">#D8D8D8</color>
+    <color name="preview_pic_bg">#F0EDE4</color>
+    <color name="login_text_color">#c1c1c1</color>
+    <color name="color_c0c0c0">#c0c0c0</color>
+    <color name="color_7fc0c0c0">#7fc0c0c0</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_d5d5d5">#d5d5d5</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="blue_4d92b7">#4d92b7</color>
+    <color name="blue_ddffdd">#ddffdd</color>
+    <color name="list_active_bg">#f0f0f0</color>
+    <color name="test_paper_name">#232323</color>
+    <color name="test_paper_en_name">#828282</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_696969">#696969</color>
+    <color name="color_e9edf0">#e9edf0</color>
+    <color name="color_2f2f2f">#2F2F2F</color>
+    <color name="color_595959">#595959</color>
+    <color name="guide_bg">#1d1d1d</color>
+    <color name="grid_select_bg">#bb2169</color>
+    <color name="color_D8D8D8">#D8D8D8</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_8e8e8e">#8e8e8e</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_727272">#727272</color>
+ 
+    <color name="color_9a9a9a">#9a9a9a</color>
+    <color name="bottom_bar_bg_color">#f9f9f9</color>
+    <color name="color_7f7f7f">#7f7f7f</color>
+    <color name="color_7c7c7c">#7c7c7c</color>
+    <color name="color_777777">#777777</color>
+    <color name="color_424345">#424345</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_2e739b">#2e739b</color>
+    <color name="color_2e2e2e">#2e2e2e</color>
+    <color name="color_ff7800">#ff7800</color>
+    <color name="color_f1f3f4">#f1f3f4</color>
+    <color name="color_992e739b">#992e739b</color>
+    <color name="color_82acc4">#82acc4</color>
+    <color name="color_C1C5C8">#C1C5C8</color>
+    <color name="color_731643">#73a643</color>
+    <color name="color_414141">#414141</color>
+    <color name="color_6a6965">#6a6965</color>
+    <color name="color_c3c3c3">#c3c3c3</color>
+    <color name="color_c5c5c5">#c5c5c5</color>
+    <color name="color_ebeae6">#ebeae6</color>
+    <color name="color_e7e6e2">#e7e6e2</color>
+    <color name="color_33b5e5">#33b5e5</color>
+    <color name="color_3284b4">#3284b4</color>
+    <color name="color_3184b6">#3184b6</color>
+    <color name="color_3086b5">#3086b5</color>
+    <color name="color_7d7d7d">#7d7d7d</color>
+    <color name="color_535353">#535353</color>
+    <color name="blue">#156255</color>
+    <color name="blue_2e739b">#2e739b</color>
+    <color name="black_666666">#666666</color>
+    <color name="gray_9c9c9c">#9c9c9c</color>
+    <color name="gray_D7D7D7">#d7d7d7</color>
+    <color name="gray_2e739b">#2e739b</color>
+    <color name="gray_727272">#727272</color>
+    <color name="gray_d9e9e8">#d9e9e8</color>
+    <color name="color_1e1e1e">#1E1E1E</color>
+    <color name="color_2c2c2c">#2c2c2c</color>
+    <color name="color_2698d7">#2698d7</color>
+    <color name="color_252525">#252525</color>
+    <color name="color_aaabad">#aaabad</color>
+    <color name="color_7c7e7d">#7c7e7d</color>
+    <color name="color_8b8b8b">#8b8b8b</color>
+    <color name="color_8d8d8d">#8d8d8d</color>
+    <color name="color_3183b3">#3183b3</color>
+    <color name="color_413f40">#413f40</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_202020">#202020</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_828282">#828282</color>
+    <color name="color_4e4e4e">#4e4e4e</color>
+    <color name="color_5e5e5e">#5e5e5e</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_d6d6d6">#d6d6d6</color>
+    <color name="color_A9A9AA">#A9A9AA</color>
+    <color name="color_ABB4BB">#ABB4BB</color>
+    <color name="color_3B3B3D">#3B3B3D</color>
+ 	<color name="color_6cbef8">#6cbef8</color>
+    <color name="color_141414">#141414</color>
+    <color name="color_a1a1a1">#a1a1a1</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_181818">#181818</color>
+    <color name="color_848484">#848484</color>
+    <color name="color_ff8400">#ff8400</color>
+    <color name="color_d9945a">#d9945a</color>
+    <color name="color_bebebe">#bebebe</color>
+    <color name="color_43708d">#43708d</color>
+    <color name="color_b5b5b5">#b5b5b5</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    
+    <color name="color_b2b2b2">#4fb2b2b2</color>
+    <color name="color_eeeeee">#EEEEEE</color>
+    <color name="color_403f3f">#403f3f</color>
+    
+      <color name="bg_color">#EDEDED</color>
+  <color name="contents_text">#ff000000</color>
+  <color name="encode_view">#ffffffff</color>
+  <color name="help_button_view">#ffcccccc</color>
+  <color name="help_view">#ff404040</color>
+  <color name="possible_result_points">#c0ffff00</color>  
+  <color name="result_image_border">#ffffffff</color>
+  <color name="result_minor_text">#ffc0c0c0</color>
+  <color name="result_points">#c000ff00</color>
+  <color name="result_text">#ffffffff</color>
+  <color name="result_view">#b0000000</color>
+  <color name="sbc_header_text">#ff808080</color>
+  <color name="sbc_header_view">#ffffffff</color>
+  <color name="sbc_list_item">#fffff0e0</color>
+  <color name="sbc_layout_view">#ffffffff</color>
+  <color name="sbc_page_number_text">#ff000000</color>
+  <color name="sbc_snippet_text">#ff4b4b4b</color>
+  <color name="share_text">#ff000000</color>
+  <color name="share_view">#ffffffff</color>
+  <color name="status_view">#50000000</color>
+  <color name="status_text">#ffffffff</color>
+  <color name="transparent">#00000000</color>
+  <color name="viewfinder_frame">#ff000000</color>
+  <color name="viewfinder_laser">#ffff0000</color>
+  <color name="viewfinder_mask">#60000000</color>
+  <color name="header">#58567D</color>
+  <color name="grgray">#686868</color>
+
+  <color name="page_bg_color">#e5e5e5</color>
+  
+   <!-- 通用颜色 -->
+    <!-- 通用蓝色 -->
+
+    <color name="color_b8b8b8">#b8b8b8</color>
+    <!-- 医生端参考模块 -->
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_5ba0ff">#5ba0ff</color>
+    <color name="color_2e739a">#2e739a</color>
+    <color name="color_898989">#898989</color>
+    <color name="color_878787">#878787</color>
+    <color name="color_8c8c8c">#8c8c8c</color>
+	 
+    <!-- 通用文字 字体色 -->
+    <!-- 突出内容 -->
+    <color name="color_267093">#267093</color>
+    <!-- 辅助内容 -->
+    <!-- 提示内容 -->
+    <color name="color_979797">#979797</color>
+    <!-- 链接 -->
+    <color name="color_dedede">#dedede</color>
+    <!-- 区分内容 -->
+    <color name="white">#ffffff</color>
+
+    <!-- 背景或者边框的色值 -->
+    <!-- 主色 -->
+    <!-- 正常色 -->
+    <color name="color_22292c">#22292c</color>
+    <color name="color_363636">#363636</color>
+    <!-- 分割线色 -->
+    <color name="color_D5D5D5">#D5D5D5</color>
+    <!-- 标签色 -->
+    <color name="color_5BA0FF">#5BA0FF</color>
+    <!-- 背景色 -->
+    <color name="color_e5e5e5">#e5e5e5</color>
+    <color name="color_EBEBEB">#EBEBEB</color>
+    <!-- 辅助icon色 -->
+    <!-- 引导ICON色 -->
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_dddddd">#dddddd</color>
+     <color name="color_d1d1d1">#d1d1d1</color>
+    <color name="color_ffb66f">#ffb66f</color>
+</resources>

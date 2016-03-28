@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_red"
+        android:orientation="horizontal"
+        android:padding="1dp" >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red2"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/text_red_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red1"
+            android:gravity="center"
+            android:text="@string/week"
+            android:textColor="@color/text_red_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/text_red_color" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_red3"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/text_red_color" />
+    </LinearLayout>
+
+    <include layout="@layout/width_line1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/jbshape"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/weight"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/word_size_14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="--"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/word_size_14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_day_average"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/day_average"
+                android:textColor="@color/white"
+                android:textSize="@dimen/word_size_9sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ffe52b" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:scrollbars="none" >
+
+            <com.patient.ui.patientUi.activity.common.LineView
+                android:id="@+id/line_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/width_line1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_add_date"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/add_date" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_share_date"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/share_date" />
+    </RelativeLayout>
+
+    <include layout="@layout/width_line1" />
+
+</LinearLayout>

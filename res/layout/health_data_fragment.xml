@@ -1,0 +1,197 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_20" />
+
+    <include layout="@layout/width_line1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_info"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_personal_info"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_personal_info"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/personal_info" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_animal_heat"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_animal_heat"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_animal_heat"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/animal_heat" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_breathe"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_breathe"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_breathe"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/breathe" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_heart_rate"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_heart_rate"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_heart_rate"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/heart_rate" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_oxygen_content"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_oxygen_content"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_oxygen_content"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/oxygen_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blood_pressure"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_blood_pressure"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_blood_pressure"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/blood_pressure" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blood_glucose"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_blood_glucose"
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/ic_blood_glucose"
+            android:drawablePadding="@dimen/distance_16"
+            android:gravity="center_vertical"
+            android:text="@string/blood_glucose" />
+    </RelativeLayout>
+
+    <include layout="@layout/width_line1" />
+
+    <TextView
+        android:id="@+id/no_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

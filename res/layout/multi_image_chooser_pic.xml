@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/img_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:background="@drawable/image_selector">
+
+        <ImageView
+            android:id="@+id/image_target"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginBottom="3dip"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="centerCrop"/>
+
+        <ImageView 
+            android:id="@+id/video_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:scaleType="fitCenter"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/selected_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#60000000"
+            android:textIsSelectable="false" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/checkbox_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:contentDescription="@null"
+            android:focusable="false"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            android:padding="5dip"
+            android:src="@drawable/select_pictures_select_icon_unselected"/>
+
+    </FrameLayout>
+
+</LinearLayout>

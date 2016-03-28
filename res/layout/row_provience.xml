@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center" 
+    android:id="@+id/lt"
+    android:background="@android:color/transparent">
+     
+    <TextView 
+        android:drawableLeft="@drawable/ic_point"
+        android:drawablePadding="@dimen/margin"
+        android:minHeight="35dp"
+        style="@style/list_item_style"
+        android:padding="5dp"
+        android:id="@+id/tvContent"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

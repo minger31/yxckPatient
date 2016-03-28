@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/color_EBEBEB" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/tvPatientName"
+                    style="@style/main_text_item_979797_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_40"
+                    android:background="@drawable/bg_shape2"
+                    android:gravity="left|center_vertical"
+                    android:hint="疑似疾病"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_depart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_40"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_shape2"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_depart"
+                        style="@style/main_text_item_979797_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:hint="选择科室"
+                        android:paddingLeft="10dp" />
+
+                    <ImageView
+                        android:id="@+id/iv_depart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/ic_top_angnals" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_40"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_shape2"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/tv_area"
+                        style="@style/main_text_item_979797_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:hint="选择地区" />
+
+                    <ImageView
+                        android:id="@+id/iv_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/ic_top_angnals" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/color_EBEBEB" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/description"
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_shape2"
+                    android:gravity="left|top"
+                    android:hint="请尽可能详细的描述病情"
+					android:maxLength="40"
+                    android:minHeight="100dp"
+                    android:padding="5dp"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_update_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/distance_40"
+                    android:background="@drawable/bg_shape1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        style="@style/main_text_item_267093_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_update_image"
+                        android:drawablePadding="5dp"
+                        android:text="上传照片" />
+                </LinearLayout>
+
+                <com.patient.commonent.MyGridView
+                    android:id="@+id/img_grid"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:cacheColorHint="#00000000"
+                    android:duplicateParentState="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:horizontalSpacing="@dimen/share_img_padding"
+                    android:listSelector="#00000000"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="@dimen/share_img_padding" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

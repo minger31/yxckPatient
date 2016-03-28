@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <!-- 问诊 ===================================================== -->
+
+    <FrameLayout
+        android:id="@+id/fl_physician_visits"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/distance_20"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/main_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_physician_visits"
+                android:drawablePadding="@dimen/distance_16"
+                android:gravity="center_vertical"
+                android:text="@string/physician_visits" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/interrogationCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/bg_count1"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+    <!-- 就诊 ===================================================== -->
+
+    <FrameLayout
+        android:id="@+id/fl_see_doctor"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/main_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_see_doctor"
+                android:drawablePadding="@dimen/distance_16"
+                android:gravity="center_vertical"
+                android:text="@string/see_doctor" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/treatmentCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/bg_count1"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+    <!-- 随访 ===================================================== -->
+
+    <FrameLayout
+        android:id="@+id/fl_follow_up"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/distance_20"
+        android:gravity="center_vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical" >
+
+            <TextView
+                style="@style/main_text_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/ic_follow_up"
+                android:drawablePadding="@dimen/distance_16"
+                android:gravity="center_vertical"
+                android:text="@string/follow_up" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/followupCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="73dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:src="@drawable/bg_count1"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

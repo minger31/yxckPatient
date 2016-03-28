@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape android:shape="oval" >
+
+            <!-- 设置按钮的四个角为弧形 -->
+            <!-- android:radius 弧形的半径 -->
+           <corners android:radius="70dip" />
+
+
+            <!-- 填充的颜色 -->
+            <solid android:color="#7fffffff" />
+
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+
+        </shape>
+    </item>
+
+    <!-- 渐变阴影 -->
+    <item>
+        <shape android:shape="oval" >
+            <gradient
+                android:angle="90"
+                android:centerColor="#40DCDCDC"
+                android:endColor="#40000000"
+                android:startColor="#ffDCDCDC"
+                android:gradientRadius="70"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+</layer-list>

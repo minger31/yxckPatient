@@ -1,0 +1,211 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_20" />
+
+    <include layout="@layout/width_line1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/sex" />
+
+        <TextView
+            android:id="@+id/tv_sex"
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_age"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/age" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_blood_type"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/blood_type" />
+          <TextView
+            android:id="@+id/tv_blood_type"
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_stature"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/stature" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_weight"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/weight" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_body_mass_index"
+        style="@style/main_layout_item"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/main_text_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:text="@string/body_mass_index" />
+    </RelativeLayout>
+
+    <include layout="@layout/width_line1" />
+
+    <TextView
+        android:id="@+id/no_click"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="image_thumbnail_size">60dip</dimen>
+    <dimen name="image_thumbnail_size_paper">60dip</dimen>
+    <dimen name="setting_sex_icon_top_margin">4dip</dimen>
+    <dimen name="multi_bucket_chooser_size">140dip</dimen>
+    <dimen name="multi_bucket_chooser_img_margin">13dip</dimen>
+    <dimen name="multi_bucket_chooser_bg_margin">10.3dip</dimen>
+    <dimen name="activity_lingqu_margin_Bottom">10dip</dimen>
+
+    <dimen name="line_width">1px</dimen>
+    <dimen name="line_width_1dp">1dp</dimen>
+    <dimen name="title_bar_height">45dip</dimen>
+    <dimen name="title_bar_height1">52dip</dimen>
+    <dimen name="title_bar_left_width">70dip</dimen>
+    <dimen name="title_bar_right_width">70dip</dimen>
+
+    <dimen name="notice_forward_bg_h">45dip</dimen>
+    <dimen name="notice_forward_bg_w">130dip</dimen>
+    <dimen name="notice_multi_img_size">120dip</dimen>
+
+    <dimen name="setting_user_text_size">22sp</dimen>
+    <dimen name="setting_content_text_size">18sp</dimen>
+
+    <dimen name="qnswitch_width">99px</dimen>
+    <dimen name="qnswitch_height">60px</dimen>
+    
+    <dimen name="tip_img_size">24px</dimen>
+    
+    <dimen name="setting_icon">44dp</dimen>
+    <dimen name="setting_icon_half">22dp</dimen>
+    
+    <dimen name="pull_refresh_pg_size">27dp</dimen>
+    
+    <dimen name="bottom_count_margin_right">10dp</dimen>
+    
+    <dimen name="testpaper_width">60dp</dimen>
+    <dimen name="testpaper_height">60dp</dimen>
+    <dimen name="testpaper_width1">50dp</dimen>
+    <dimen name="testpaper_height1">40dp</dimen>
+    
+    <dimen name="testpaper">80dp</dimen>
+    
+    <dimen name="doc_bar">135dp</dimen>
+    
+    <dimen name="paper_width">85dp</dimen>
+    <dimen name="paper_heiht">85dp</dimen>
+    
+    <dimen name="academic_doctor_itemheiht">95dp</dimen>
+    
+    <dimen name="testpaper_academic_icon">30dp</dimen>
+    <dimen name="testpaper_academic_icon1">20dp</dimen>
+    
+    <dimen name="testpaper54">80dp</dimen>
+    <dimen name="testpaper54_1">80dp</dimen>
+    <dimen name="testpaper54_2">65dp</dimen>
+    <dimen name="testpaper27">40dp</dimen>
+     <dimen name="setting_item_height">56dp</dimen>
+     <dimen name="setting_item_height1">48dp</dimen>
+     
+     <dimen name="act_project_leader_height2">66dp</dimen>
+     <dimen name="act_project_leader_height">56dp</dimen>
+     <dimen name="view_pager_height">130dp</dimen>
+     <dimen name="view_pager_height2">150dp</dimen>
+     <dimen name="view_pager_height1">130dp</dimen>
+     <dimen name="act_project_leader_height1">20dp</dimen>
+     <dimen name="act_academic_lian_height">30dp</dimen>
+     <dimen name="act_add_docter_height">45dp</dimen>
+     <dimen name="row_choose_area_and_depart_height">50dp</dimen>
+     <dimen name="row_mycme_height">12dp</dimen>
+     <dimen name="act_login_width">30dp</dimen>
+     <dimen name="act_login_width_new">15dp</dimen>
+     <dimen name="act_multi_doctor_height">50dp</dimen>
+     <dimen name="act_new_acadmics_height">40dp</dimen>
+     <dimen name="act_new_acadmics_height1">50dp</dimen>
+     <dimen name="act_new_acadmics_height2">35dp</dimen>
+     <dimen name="margin">10dp</dimen>
+     <dimen name="margin1">15dp</dimen>
+     <dimen name="margin4">25dp</dimen>
+     <dimen name="margin2">45dp</dimen>
+     <dimen name="margin3">30dp</dimen>
+     <dimen name="margin5">7dp</dimen>
+     <dimen name="margin6">25dp</dimen>
+     <dimen name="bottom_menu_pick_photo_height">40dp</dimen>
+     <dimen name="act_personal_info_height">70dp</dimen>
+     <dimen name="act_personal_info_height1">44dp</dimen>
+     <dimen name="act_personal_info_height2">40dp</dimen>
+     <dimen name="act_personal_info_height3">100dp</dimen>
+     <dimen name="title_line_height">1dp</dimen>
+     <dimen name="login_magin_top">205dp</dimen>
+     <dimen name="login_magin_left">25dp</dimen>
+     <dimen name="login_magin_left_new">25dp</dimen>
+     <dimen name="act_find_password_height">50dp</dimen>
+     <dimen name="personal_fragment_height">65dp</dimen>
+     <dimen name="personal_fragment_height1">15dp</dimen>
+     <dimen name="intenger_margin">8dp</dimen>
+     <dimen name="min_width_comment">80dp</dimen>
+     <dimen name="infor_detail">40dp</dimen>
+     
+     <dimen name="video_height">200dp</dimen>
+     <dimen name="fousle_news_height">200dp</dimen>
+     <dimen name="other_height">80dp</dimen>
+     
+     <dimen name="infor_icon_width">100dp</dimen>
+     <dimen name="infor_icon_height">82dp</dimen>
+     <dimen name="act_docter_resarch_fragment_width">50dp</dimen>
+     <dimen name="act_docter_resarch_fragment_width_57">57dp</dimen>
+     <dimen name="act_docter_resarch_fragment_width_56">56dp</dimen>
+     <dimen name="act_docter_resarch_fragment_width_40">40dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_5">5dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_6">6dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_15">15dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_25">25dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_10">10dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_2">2dp</dimen>
+     <dimen name="act_docter_resarch_fragment_margin_4">4dp</dimen>
+     
+     <dimen name="group_height">80dp</dimen>
+     <dimen name="item_height">70dp</dimen>
+     <dimen name="item_height1">60dp</dimen>
+     
+     <dimen name="infor_height">60dp</dimen>
+     <dimen name="reg_maginleft">16dp</dimen>
+     <dimen name="reg_magintop">12dp</dimen>
+     <dimen name="reg_magintop1">8dp</dimen>
+   
+      <dimen name="margin_5">3dp</dimen>
+     <dimen name="margin_13">10dp</dimen>
+     <dimen name="margin_20">15dp</dimen>
+     <dimen name="margin_25">18dp</dimen>
+     <dimen name="margin_30">25dp</dimen>
+     <dimen name="margin_35">30dp</dimen>
+     <dimen name="margin_8">5dp</dimen>
+     <dimen name="margin_7">4dp</dimen>
+     <dimen name="margin_9">6dp</dimen>
+     <dimen name="margin_15">13dp</dimen>
+     <dimen name="margin_24">20dp</dimen>
+     <dimen name="margin_18">14dp</dimen>
+     <dimen name="margin_12">8dp</dimen>
+     <dimen name="margin_14">10dp</dimen>
+     <dimen name="margin_6">4dp</dimen>
+     <dimen name="margin_3">2dp</dimen>
+     <dimen name="margin_156">130dp</dimen>
+     <dimen name="margin_84">75dp</dimen>
+     <dimen name="margin_2">2px</dimen>
+     <dimen name="margin_1">1dp</dimen>
+     <dimen name="margin_100">85dp</dimen>
+     <dimen name="margin_60">50dp</dimen>
+     <dimen name="margin_500">400dp</dimen>
+     <dimen name="margin_47">40dp</dimen>
+     <dimen name="margin_22">17dp</dimen>
+     <dimen name="margin_10">8dp</dimen>
+     
+     <dimen name="meeting_text_size">14sp</dimen>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:descendantFocusability="blocksDescendants" >
+
+    <ImageView
+        android:id="@+id/image_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/video_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image_target"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/video_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:progressDrawable="@drawable/notice_vcard_progressbar"
+        android:visibility="gone" />
+
+</RelativeLayout>

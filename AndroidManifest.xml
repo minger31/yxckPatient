@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yxck.patient"
+    android:versionCode="1"
+    android:versionName="1.0.0.9" >
+
+    <!-- 96ffdd0adb4da5120a028c06cdccc51e -->
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 照相机权限权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />  
+
+       <!-- 凤鸣效果 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+     <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.patient.PatientApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActSendComment"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" >
+            <intent-filter>
+
+                <!-- 支持外部系统的分享图片 -->
+                <data android:mimeType="image/*" />
+
+                <action android:name="android.intent.action.ALL_APPS" />
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.APP_GALLERY" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.patient.db.DBProvider"
+            android:authorities="com.patient.db.cache.provider" >
+        </provider>
+    
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 启动页面 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" >
+
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 主界面 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.PatientMainFragment"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 生命线 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.FragLifeLine"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 健康数据 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.FragHealthData"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 病友圈 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.patientsCircle.FragPatientsCircle"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 我 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.FragPersonal"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 注册 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 找回密码 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActFindPassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 选择图片 -->
+        <activity
+            android:name="com.patient.ui.patientUi.defineView.defineImgGallery.MultiBucketChooserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.defineView.defineImgGallery.MultiImageChooserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.PreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActSetting"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActChangePassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 意见建议 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActOpinionsSuggestions"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 产品介绍 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActProductPresentation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 消息（我界面的） -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActMessages"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 个人信息界面 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActPersonalInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 二维码 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActMyQr"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.patient.library.zxing.view.MipcaActivityCapture"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActPatientInterrogation"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActAddInterrgeration"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActDoctorSchdule"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+
+        <!-- 问诊 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActPhysicianVisits"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 就诊 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActSeeDoctor"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <!-- 随访 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActFollowUp"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 个人主页 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActPersonalMainPage"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActAddVisit"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActCommitVisit"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" >
+<!--             <intent-filter> -->
+<!--                 <action android:name="android.intent.action.MAIN" /> -->
+
+<!--                 <category android:name="android.intent.category.LAUNCHER" /> -->
+<!--             </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActVisitedHistoryDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+
+        <!-- 病友圈 评论列表 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.patientsCircle.ActCommentList"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 病友圈 评论 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.patientsCircle.ActComment"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 病友圈 评论 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActTreatmentDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 视频播放 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActPlayVideo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 填写随访 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActFillFollowup"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 微聊 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActSmallTalk"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <!-- 添加数据 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActAddDate"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 体重 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActWeight"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 健康数据  个人信息 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActPersonalInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 图片加载的 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActPreViewIcon"
+            android:screenOrientation="portrait"
+            android:theme="@style/MySherlockTheme" />
+        <!-- 图片加载的 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.SpaceImageDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 选择省市-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActChoosePCH"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 商城 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActStore"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 完善就诊信息 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.lifeLine.ActPerfectMedicalInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 支付宝快捷充值-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActAlipay"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 选择疾病-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActChoseDiease"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 学术币-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.personal.ActAcademicCurrency"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+          <!-- 支付宝支付配置 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        
+           <activity
+            android:name="com.patient.ui.patientUi.TestPush"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+ 
+        <!-- 购买鲜花和锦旗 的公用界面-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.common.ActBuyFlowersBanner"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+
+        
+          <!-- umeng 消息推送配置 -->
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.yxck.patient.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushService_v1" >
+            <intent-filter>
+                <action android:name="com.yxck.patient.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.yxck.patient.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":pushService_v1" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="52040a7c921dbb00994e22d7587be320" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+            <!-- 友盟的key  分享和统计逻辑的处理 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="549ba503fd98c5ba42001064" />
+         
+        <!-- 体重指数-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActBodyMassIndex"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 身高 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActStature"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 体温 -->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActAnimalHeat"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 呼吸-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActBreathe"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 心率-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActHeartRate"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 含氧量-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActOxygenContent"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 血压-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActBloodPressure"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+        <!-- 血糖-->
+        <activity
+            android:name="com.patient.ui.patientUi.activity.healthData.ActBloodGlucose"
+            android:screenOrientation="portrait"
+            android:theme="@style/IMTheme.Transparent" />
+
+        <!-- umeng  消息推送服务 接收intent -->
+        <service android:name="com.umeng.message.UmengIntentService" />
+        <service android:name="com.patient.service.PushIntentService" />
+        <service android:name="com.patient.service.ReloadMoneyService" />
+        
+</application>
+
+</manifest>

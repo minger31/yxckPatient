@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_sex_enum"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="诊断        " />
+
+                <LinearLayout
+                    android:id="@+id/rl_diase"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_shape2"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_diase"
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="请选择疾病名称"
+                        android:paddingLeft="10dp"
+                        android:textColor="#979797" />
+
+                    <ImageView
+                        android:id="@+id/iv_diase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_top_angnal"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_birth_date"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="主诉        " />
+
+                <EditText
+                    android:id="@+id/tv_description"
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_shape2"
+                    android:hint="请输入简单症状表现"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="时间        " />
+
+                <TextView
+                    android:id="@+id/treamentTime"
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/bg_shape2"
+                    android:gravity="center_vertical"
+                    android:hint="就诊时间"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="卡号        " />
+
+                <EditText
+                    android:id="@+id/et_card_number"
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bg_shape2"
+                    android:gravity="center_vertical"
+                    android:hint="就诊卡号（选填）"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="就诊录音" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_recording"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_shape9"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/main_text_item_363636_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_recording"
+                            android:drawablePadding="5dp"
+                            android:text="点击录音"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_record"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/main_text_item_363636_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="就诊录音"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@+id/ll_record_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp" >
+
+                    <Button
+                        android:id="@+id/paly_voice_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@anim/record_voice_animation" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="基本信息" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_basic_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_shape9"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/main_text_item_363636_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_photo"
+                            android:drawablePadding="5dp"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_basic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="基本信息"
+                        android:visibility="invisible" />
+
+                    <GridView
+                        android:id="@+id/basicInfoGv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|fill_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:cacheColorHint="#00000000"
+                        android:duplicateParentState="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|fill_vertical"
+                        android:horizontalSpacing="@dimen/margin_5"
+                        android:listSelector="#00000000"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/margin_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="检查信息" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_check_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_shape9"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/main_text_item_363636_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_photo"
+                            android:drawablePadding="5dp"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_check"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="检查信息"
+                        android:visibility="invisible" />
+
+                    <GridView
+                        android:id="@+id/checkGv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|fill_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:cacheColorHint="#00000000"
+                        android:duplicateParentState="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|fill_vertical"
+                        android:horizontalSpacing="@dimen/margin_5"
+                        android:listSelector="#00000000"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/margin_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="治疗信息" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_cure_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_shape9"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/main_text_item_363636_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_photo"
+                            android:drawablePadding="5dp"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/main_text_item_363636_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="治疗信息"
+                        android:visibility="invisible" />
+
+                    <GridView
+                        android:id="@+id/cureGv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|fill_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:cacheColorHint="#00000000"
+                        android:duplicateParentState="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical|fill_vertical"
+                        android:horizontalSpacing="@dimen/margin_5"
+                        android:listSelector="#00000000"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/margin_5" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

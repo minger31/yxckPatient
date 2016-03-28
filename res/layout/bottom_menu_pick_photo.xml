@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:duplicateParentState="false"
+        android:orientation="vertical"
+        android:padding="@dimen/line_width1" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:tag="1"
+            android:textColor="#0079FF"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width1"
+            android:background="#C5C5C9"
+            android:tag="line1"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:tag="2"
+            android:textColor="#0079FF"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width1"
+            android:background="#C5C5C9"
+            android:tag="line2"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:tag="3"
+            android:textColor="#0079FF"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width1"
+            android:background="#C5C5C9"
+            android:tag="line3"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:tag="4"
+            android:textColor="#0079FF"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_width1"
+            android:background="#C5C5C9"
+            android:tag="line4"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_common_dialog_btn"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_5"
+        android:layout_marginTop="@dimen/margin_8"
+        android:duplicateParentState="false"
+        android:orientation="vertical"
+        android:padding="@dimen/line_width1" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/bottom_menu_pick_photo_height"
+            android:background="@drawable/bg_item_shape_top_bottom"
+            android:text="@string/cancle"
+            android:textColor="#0079FF"
+            android:textSize="@dimen/word_size_18sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+</LinearLayout>

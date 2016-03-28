@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_EBEBEB"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_20" />
+
+    <include layout="@layout/width_line1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="@drawable/bg_item_pressed"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/distance_12"
+        android:paddingRight="@dimen/distance_12"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/date" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/main_text_item_363636_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="2015年1月20日" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="@drawable/bg_item_pressed"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/distance_12"
+        android:paddingRight="@dimen/distance_12"
+        android:paddingTop="10dp" >
+
+        <TextView
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/time" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/main_text_item_363636_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:text="13：10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/width_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_48"
+        android:background="@drawable/bg_item_pressed"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/distance_12"
+        android:paddingRight="@dimen/distance_12"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/tv_unit"
+            style="@style/main_text_item_979797_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/kilogram" />
+
+        <EditText
+            android:id="@+id/ed_kilogram"
+            style="@style/main_text_item_363636_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789."
+            android:gravity="center_vertical|right"
+            android:inputType="phone"
+            android:maxLength="5"
+            android:text="" />
+    </LinearLayout>
+ 
+</LinearLayout>

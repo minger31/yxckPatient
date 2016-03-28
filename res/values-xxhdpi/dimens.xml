@@ -1,0 +1,183 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="image_thumbnail_size">68dip</dimen>
+    
+    <dimen name="setting_sex_icon_top_margin">5dip</dimen>
+
+    <dimen name="notice_forward_bg_h">40dip</dimen>
+    <dimen name="notice_forward_bg_w">130dip</dimen>
+
+    <dimen name="notice_multi_img_size">130dip</dimen>
+
+      <dimen name="line_width_3px">1dp</dimen>
+    <dimen name="line_width2">2px</dimen>
+    <dimen name="line_width">6px</dimen>
+    <dimen name="line_width3">4dp</dimen>
+    <dimen name="line_width1">1px</dimen>
+    <dimen name="word_size_9sp">9sp</dimen>
+    <dimen name="word_size_11sp">11sp</dimen>
+    <dimen name="word_size_12sp">12sp</dimen>
+    <dimen name="word_size_13sp">13sp</dimen>
+    <dimen name="word_size_13sp_1">14sp</dimen>
+    <dimen name="word_size_14sp">14sp</dimen>
+    <dimen name="word_size_15sp">15sp</dimen>
+    <dimen name="word_size_15sp_1">16sp</dimen>
+    <dimen name="word_size_16sp">16sp</dimen>
+    <dimen name="word_size_17sp">17sp</dimen>
+    <dimen name="word_size_18sp">18sp</dimen>
+    <dimen name="word_size_19sp">19sp</dimen>
+    <dimen name="word_size_20sp">20sp</dimen>
+    <dimen name="word_size_22sp">22sp</dimen>
+    <dimen name="word_size_25sp">25sp</dimen>
+    <dimen name="word_size_26sp">26sp</dimen>
+    <dimen name="word_size_28sp">28sp</dimen>
+    <dimen name="meeting_text_size">16sp</dimen>
+    
+    
+    
+    <dimen name="preview_bottom_layout_height">52dip</dimen>
+    <dimen name="preview_bottom_button_height">32dip</dimen>
+    <dimen name="preview_bottom_button_width">64dip</dimen>
+    
+    <dimen name="qnswitch_width">149px</dimen>
+    <dimen name="qnswitch_height">90px</dimen>
+    <dimen name="tip_img_size">36px</dimen>
+    
+    <dimen name="setting_icon">92dp</dimen>
+    <dimen name="setting_icon_half">46dp</dimen>
+    
+    <dimen name="second_setting_icon_half">27dp</dimen>
+	<dimen name="paper_width">100dp</dimen>
+	<dimen name="paper_heiht">90dp</dimen>
+    <dimen name="pull_refresh_pg_size">30dp</dimen>
+    <dimen name="bottom_count_margin_right">14dp</dimen>
+    <dimen name="act_project_leader_height">84dp</dimen>
+    <dimen name="view_pager_height">190dp</dimen>
+    <dimen name="view_pager_height2">190dp</dimen>
+    <dimen name="view_pager_height1">130dp</dimen>
+    <dimen name="act_project_leader_height1">30dp</dimen>
+    <dimen name="act_academic_lian_height">36dp</dimen>
+    <dimen name="testpaper">100dp</dimen>
+    <dimen name="testpaper54">70dp</dimen>
+    <dimen name="testpaper54_2">70dp</dimen>
+    <dimen name="testpaper54_1">90dp</dimen>
+    <dimen name="testpaper27">45dp</dimen>
+    
+    <dimen name="title_bar_height">52dip</dimen>
+    <dimen name="testpaper_width">70dp</dimen>
+    <dimen name="testpaper_height">70dp</dimen>
+    <dimen name="testpaper_academic_icon">35dp</dimen>
+    <dimen name="testpaper_academic_icon1">25dp</dimen>
+    <dimen name="testpaper_academic_icon2">20dp</dimen>
+    <dimen name="act_add_docter_height">45dp</dimen>
+    <dimen name="row_choose_area_and_depart_height">55dp</dimen>
+    <dimen name="row_mycme_height">12dp</dimen>
+    <dimen name="act_login_width">20dp</dimen>
+    <dimen name="act_login_width_new">15dp</dimen>
+    <dimen name="act_multi_doctor_height">55dp</dimen>
+    <dimen name="act_new_acadmics_height">45dp</dimen>
+    <dimen name="act_new_acadmics_height2">40dp</dimen>
+    <dimen name="act_new_acadmics_height1">55dp</dimen>
+    <dimen name="margin">15dp</dimen>
+    <dimen name="margin1">20dp</dimen>
+    <dimen name="margin2">50dp</dimen>
+    <dimen name="margin3">35dp</dimen>
+    <dimen name="margin4">30dp</dimen>
+    <dimen name="margin5">10dp</dimen>
+    <dimen name="margin6">40dp</dimen>
+    <dimen name="margin7">17dp</dimen>
+    <dimen name="act_project_leader_height2">76dp</dimen>
+    <dimen name="bottom_menu_pick_photo_height">55dp</dimen>
+    <dimen name="act_personal_info_height">90dp</dimen>
+    <dimen name="act_personal_info_height1">55dp</dimen>
+    <dimen name="act_personal_info_height2">45dp</dimen>
+    <dimen name="act_personal_info_height3">130dp</dimen>
+    <dimen name="setting_item_height">62dp</dimen>
+    <dimen name="setting_item_height1">53dp</dimen>
+    <dimen name="title_line_height">2dp</dimen>
+    <dimen name="login_magin_top">215dp</dimen>
+    <dimen name="login_magin_left">25dp</dimen>
+    <dimen name="login_magin_left_new">28dp</dimen>
+    <dimen name="act_find_password_height">50dp</dimen>
+    <dimen name="personal_fragment_height">80dp</dimen>
+    <dimen name="personal_fragment_height1">17dp</dimen>
+    
+    <dimen name="reg_maginleft">16dp</dimen>
+    <dimen name="reg_magintop">12dp</dimen>
+     <dimen name="reg_magintop1">8dp</dimen>
+    
+      <dimen name="margin_5">5dp</dimen>
+     <dimen name="margin_13">13dp</dimen>
+     <dimen name="margin_20">20dp</dimen>
+     <dimen name="margin_25">25dp</dimen>
+     <dimen name="margin_30">30dp</dimen>
+     <dimen name="margin_35">35dp</dimen>
+     <dimen name="margin_8">8dp</dimen>
+     <dimen name="margin_7">7dp</dimen>
+     <dimen name="margin_9">9dp</dimen>
+     <dimen name="margin_15">15dp</dimen>
+     <dimen name="margin_24">24dp</dimen>
+     <dimen name="margin_18">18dp</dimen>
+     <dimen name="margin_12">12dp</dimen>
+     <dimen name="margin_14">14dp</dimen>
+     <dimen name="margin_6">6dp</dimen>
+     <dimen name="margin_3">3dp</dimen>
+     <dimen name="margin_156">160dp</dimen>
+     <dimen name="margin_84">85dp</dimen>
+     <dimen name="margin_2">2px</dimen>
+     <dimen name="margin_4">4px</dimen>
+     <dimen name="margin_1">1dp</dimen>
+     <dimen name="margin_100">100dp</dimen>
+     <dimen name="margin_60">60dp</dimen>
+     <dimen name="margin_500">500dp</dimen>
+     <dimen name="margin_47">47dp</dimen>
+     <dimen name="margin_22">22dp</dimen>
+     <dimen name="margin_10">10dp</dimen>
+     <dimen name="padding_20">20dip</dimen>
+     <dimen name="padd_wh">5dp</dimen>
+     <dimen name="width_90">90dip</dimen>
+     <dimen name="width_160">160dip</dimen>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+<!--  定义的距离  xxhdpi公用,特殊的单独写-->
+	<dimen name="distance_2">2dp</dimen>
+	<dimen name="distance_5">5dp</dimen>
+	<dimen name="distance_6">6dp</dimen>
+	<dimen name="distance_7">7dp</dimen>
+	<dimen name="distance_8">8dp</dimen>
+	<dimen name="distance_10">10dp</dimen>
+	<dimen name="distance_12">12dp</dimen>
+	<dimen name="distance_13">13dp</dimen>
+	<dimen name="distance_15">15dp</dimen>
+	<dimen name="distance_16">16dp</dimen>
+	<dimen name="distance_17">17dp</dimen>
+	<dimen name="distance_20">20dp</dimen>
+	<dimen name="distance_23">23dp</dimen>
+	<dimen name="distance_30">30dp</dimen>
+	<dimen name="distance_35">35dp</dimen>
+	<dimen name="distance_40">40dp</dimen>
+	<dimen name="distance_48">48dp</dimen>
+	<dimen name="distance_50">50dp</dimen>
+	<dimen name="distance_52">52dp</dimen>
+	<dimen name="distance_54">54dp</dimen>
+	<dimen name="distance_60">60dp</dimen>
+	
+	<dimen name="padding_5">5dip</dimen>
+	<dimen name="padding_30">30dip</dimen>
+	<dimen name="padding_65">65dip</dimen>
+<!--  定义的距离  xxhdpi公用,特殊的单独写-->
+	<dimen name="distance_1">1dp</dimen><!-- 就是1dp，不需要适配 -->
+	<dimen name="distance_px_2">2px</dimen><!-- 就是1dp，不需要适配 -->
+	
+</resources>

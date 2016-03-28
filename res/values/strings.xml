@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 讯飞语音id -->
+    <string name="app_id">54fcfa5a</string>
+    <string name="schdule_setting">查看日程</string>
+    <string name="app_name">医学参考-患者</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about">关于我们</string>
+    <string name="recharge">充值</string>
+    <string name="academic_currency">学术币</string>
+    <string name="yuan">元</string>
+    <string name="load_full">已加载全部</string>
+    <string name="no_data">暂无数据</string>
+    <string name="more">加载中</string>
+    <string name="cancle">取消</string>
+    <string name="ok">确认</string>
+    <string name="close">关闭</string>
+    <string name="refresh">下拉刷新</string>
+    <string name="refresh1">上次更新</string>
+    <string name="ing">加载数据中</string>
+    <string name="scan_text"></string>
+    <!-- <string name="scan_text">将取景框对准二维码\n即可自动扫描</string> -->
+    <string name="back">返回</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="submit">提交</string>
+    <string name="send">发送</string>
+    <string name="image_select_title">相册</string>
+    <string name="video_select_title">视频</string>
+    <string name="file_no_exist_or_oversize">文件不存在或者图片分享太大</string>
+    <string name="say_what">此刻您想说点什么</string>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="blood_type">
+        <item>A型</item>
+        <item>B型</item>
+        <item>O型</item>
+        <item>AB型</item>
+    </string-array>
+
+    <string name="life_line">生命线</string>
+    <string name="health_data">健康数据</string>
+    <string name="patients_circle">病友圈</string>
+    <string name="me">我</string>
+    <string name="physician_visits">问诊</string>
+    <string name="see_doctor">就诊</string>
+    <string name="follow_up">随访</string>
+    <string name="setting">设置</string>
+    <string name="change_password">修改密码</string>
+    <string name="product_presentation">产品介绍</string>
+    <string name="opinions_suggestions">意见建议</string>
+    <string name="software_update">软件更新</string>
+
+    <!-- 工作界面 -->
+    <string name="residue">剩余</string>
+    <string name="head">头像</string>
+    <string name="user_name">用户名</string>
+    <string name="name">姓名</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="address">地区</string>
+    <string name="email">邮件</string>
+    <string name="blood_type">血型</string>
+    <string name="desc_shrinkup">收起</string>
+    <string name="desc_spread">展开</string>
+    <string name="date">日期</string>
+    <string name="time">时间</string>
+    <string name="kilogram">公斤</string>
+    <string name="show">在图标汇总显示</string>
+    <string name="share_date">共享数据</string>
+    <string name="add_date">添加数据点</string>
+    <string name="show_all_date">显示所有数据</string>
+    <string name="day">日</string>
+    <string name="week">周</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="weight">体重</string>
+    <string name="day_average">日平均值：--</string>
+    <!-- 健康数据 -->
+    <string name="personal_info">个人信息</string>
+    <string name="animal_heat">体温</string>
+    <string name="breathe">呼吸</string>
+    <string name="heart_rate">心率</string>
+    <string name="oxygen_content">含氧量</string>
+    <string name="blood_pressure">血压</string>
+    <string name="blood_glucose">血糖</string>
+    <string name="stature">身高</string>
+    <string name="body_mass_index">身高体重指数</string>
+
+</resources>
